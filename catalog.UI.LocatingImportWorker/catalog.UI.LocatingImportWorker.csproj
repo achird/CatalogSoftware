@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-catalog.UI.LocatingImportWorker-83B82FFF-9DEB-4DD3-897A-905414E99875</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Scrutor" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\catalog.Core.Acl.Locating\catalog.Core.Acl.Locating.csproj" />
+    <ProjectReference Include="..\catalog.Core.Exchange.Locating\catalog.Core.Exchange.Locating.csproj" />
+    <ProjectReference Include="..\catalog.Infrastructure.Cache\catalog.Infrastructure.Cache.csproj" />
+    <ProjectReference Include="..\catalog.Infrastructure.Exchange.Locating\catalog.Infrastructure.Exchange.Locating.csproj" />
+    <ProjectReference Include="..\catalog.Infrastructure.IO\catalog.Infrastructure.IO.csproj" />
+    <ProjectReference Include="..\catalog.Persistence.DBLocating\catalog.Persistence.DBLocating.csproj" />
+  </ItemGroup>
+</Project>

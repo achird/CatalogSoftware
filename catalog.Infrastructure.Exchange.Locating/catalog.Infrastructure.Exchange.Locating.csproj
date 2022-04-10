@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SharpCompress" Version="0.31.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\catalog.Core.Exchange.Locating\catalog.Core.Exchange.Locating.csproj" />
+    <ProjectReference Include="..\catalog.Infrastructure.Utility.XmlConverter\catalog.Infrastructure.Utility.XmlConverter.csproj" />
+  </ItemGroup>
+
+</Project>
