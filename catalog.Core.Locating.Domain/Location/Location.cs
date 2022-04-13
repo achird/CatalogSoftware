@@ -141,7 +141,7 @@ namespace catalog.Core.Locating.Domain.Location
         private LocationObject GetLocation(LocationType locationType)
         {
             if (lookupOverObjects is not null && lookupOverObjects.Contains(locationType))
-                return lookupOverObjects[locationType].First();
+                return lookupOverObjects[locationType].Last();
 
             return LocationObject.Default;
         }
